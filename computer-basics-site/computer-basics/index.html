@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Basics Explained</title>
+<meta name="description" content="A free beginner course on computer parts, Word, PowerPoint, and Excel. Works on any phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><span class="logo" aria-hidden="true">&#9638;</span>Computer Basics</a>
+  <nav aria-label="Main"><a href="#paths">Paths</a><a href="#parts">Parts</a><a href="#simulator">Simulator</a><a href="#software">Software</a><a href="#quiz">Quiz</a><a href="#glossary">Glossary</a></nav>
+  <span class="chip by">by MJ Mutex</span>
+  <button class="icon" id="theme" type="button" aria-label="Switch dark or light mode">&#9790;</button>
+</header>
+<main id="top">
+  <section class="hero">
+    <div>
+      <span class="chip">FREE BEGINNER COURSE</span>
+      <h1>Computer Basics <em>Explained</em></h1>
+      <p>Learn what every part of a computer does, in plain words and real photos. No experience needed.</p>
+      <a class="btn" href="#paths">Start Learning &rarr;</a> <a class="btn alt" href="#quiz">Take the quiz</a>
+    </div>
+    <div class="heroimg ph"><span>Motherboard</span><img src="images/motherboard.jpg" alt="Photo of a computer motherboard" onerror="this.remove()"></div>
+  </section>
+  <section id="paths"><h2>Follow a path, step by step</h2><p class="sub">Each path puts the right parts and lessons in a sensible order, so you always know what to study next.</p><div class="grid two" id="pathgrid"></div><div id="pathview" class="panel" hidden></div></section>
+  <section id="parts"><h2>Computer parts</h2><p class="sub">Search or filter, then read what each part does.</p>
+    <input type="search" id="q" placeholder="Search parts, e.g. RAM or printer" aria-label="Search parts"><div class="pills" id="pills"></div>
+    <p class="sub" id="count" aria-live="polite"></p><div class="grid" id="grid"></div></section>
+  <section id="simulator"><h2>What happens when you press power?</h2><p class="sub">Step through the start-up of a computer.</p><div class="panel" id="sim"></div></section>
+  <section id="software"><h2>Office software</h2><p class="sub">Short lessons for Word, PowerPoint, and Excel. Tick each one when you finish.</p><div class="pills" id="tabs"></div><ol class="les" id="les"></ol><p class="sub" id="prog" aria-live="polite"></p></section>
+  <section id="quiz"><h2>Quick quiz</h2><div class="panel" id="qbox"></div></section>
+  <section id="glossary"><h2>Glossary</h2><input type="search" id="gq" placeholder="Search a word" aria-label="Search glossary"><dl id="gl"></dl></section>
+</main>
+<footer><span class="chip by">Developed by MJ Mutex</span><p>Computer Basics Explained: free computer skills for everyone. See it. Learn it. Understand it.</p></footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
